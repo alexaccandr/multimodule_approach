@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation1"
+    app:startDestination="@id/testFragment1">
+
+    <fragment
+        android:id="@+id/testFragment1"
+        android:name="com.example.feature1.TestFragment1"
+        android:label="TestFragment1">
+
+        <deepLink
+            android:id="@+id/deepLink1"
+            app:uri="myapp://www.example.com/fragment1/{id}" />
+<!--            app:uri="myapp://www.example.com/fragment1/{id}?region_id={route_id}" />-->
+    </fragment>
+
+</navigation>
